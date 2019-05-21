@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+          $("#m1").prepend("<p>삽입1_1</p>")
+          $("#m1").append("<p>삽입1_2</p>")
+          $("#m1").before("<p>삽입1_3</p>")
+            $("#m1").after("<p>삽입1_4</p>")
+           $("<p>삽입2_1</p>").prependTo("#m2")
+          $("<p>삽입2_2</p>").prependTo("#m2")
+          $("<p>삽입2_3</p>").insertBefore("#m2")
+          $("<p>삽입2_4</p>").insertAfter("#m2")
+        });
+    </script>
+</head>
+<body>
+   <div id = "m1">내용1</div>
+   <div id = "m2">내용2</div>
+</body>
+</html>
